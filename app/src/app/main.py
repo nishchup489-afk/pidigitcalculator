@@ -8,7 +8,8 @@ from decimal import Decimal , getcontext
 app = FastAPI()
 
 
-templates = Jinja2Templates(directory="src/app/templates")
+templates = Jinja2Templates(directory="app/src/app/templates")
+
 
 def chudnovsky(n):
     getcontext().prec = n + 10
