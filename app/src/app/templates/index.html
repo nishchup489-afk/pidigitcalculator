@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>π Digit Finder</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-indigo-950 via-slate-900 to-black text-white flex items-center justify-center">
+
+<div class="w-full max-w-3xl p-8">
+
+    <header class="mb-10">
+
+        <div class="flex justify-end mb-6">
+            <a href="/about" class="px-4 py-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition text-sm">
+                About
+            </a>
+        </div>
+
+        <div class="text-center">
+            <h1 class="text-4xl font-bold tracking-tight bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                π Digit Finder
+            </h1>
+
+            <p class="text-gray-400 mt-2">
+                Calculate π to the Nth decimal using the Chudnovsky algorithm
+            </p>
+        </div>
+
+    </header>
+
+
+    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 shadow-2xl">
+
+        <form action="/calc" method="post" class="flex flex-col sm:flex-row gap-4">
+
+            <input
+                type="number"
+                name="user_input"
+                placeholder="Enter number of digits..."
+                class="flex-1 px-5 py-3 rounded-xl bg-black/40 border border-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-white placeholder-gray-400 transition"
+            >
+
+            <button
+                type="submit"
+                class="px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 transition font-semibold shadow-lg"
+            >
+                Calculate
+            </button>
+
+        </form>
+
+
+        {% if result %}
+        <div class="mt-8">
+
+            <h2 class="text-sm uppercase tracking-wider text-gray-400 mb-2">
+                Result
+            </h2>
+
+            <div class="bg-black/50 border border-white/10 rounded-xl p-5 font-mono text-sm break-all leading-relaxed text-green-400">
+                {{ result }}
+            </div>
+
+        </div>
+        {% endif %}
+
+    </div>
+
+
+    <footer class="text-center mt-8 text-gray-500 text-sm">
+        Powered by FastAPI + Python Decimal Precision
+    </footer>
+
+</div>
+
+</body>
+</html>
