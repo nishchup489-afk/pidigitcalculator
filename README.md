@@ -422,7 +422,3 @@ If you want the full user-facing version, run the FastAPI app or visit the live 
 
 **Powered by Python, precision, and a little mathematical stubbornness.**
 
-```
-
-One honest fix: your repo line should usually be written as **GitHub Repo**, not `Github_repo`. Tiny thing, but it makes the README look cleaner.
-```
