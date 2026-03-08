@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | π Digit Finder</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-indigo-950 via-slate-900 to-black text-white">
+
+<div class="mx-auto max-w-6xl px-6 py-8 md:px-10 md:py-12">
+
+    <div class="mb-8 flex items-center justify-between">
+        <a href="/" class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-200 transition hover:bg-white/10">
+            <span>←</span>
+            <span>Back to Calculator</span>
+        </a>
+
+        <div class="flex items-center gap-3">
+            <a href="https://pidigitcalculator.vercel.app" target="_blank" class="rounded-xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300 transition hover:bg-cyan-400/20">
+                Live Preview
+            </a>
+            <a href="https://github.com/nishchup489-afk/pidigitcalculator" target="_blank" class="rounded-xl border border-purple-400/20 bg-purple-400/10 px-4 py-2 text-sm text-purple-300 transition hover:bg-purple-400/20">
+                GitHub Repo
+            </a>
+        </div>
+    </div>
+
+    <section class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl md:p-10">
+        <div class="mb-6 inline-flex rounded-full border border-indigo-400/20 bg-indigo-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-indigo-300">
+            Project 1 of 100 Python Live Projects
+        </div>
+
+        <h1 class="text-4xl font-black tracking-tight md:text-6xl">
+            <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                π Digit Calculator
+            </span>
+        </h1>
+
+        <p class="mt-5 max-w-4xl text-base leading-8 text-gray-300 md:text-lg">
+            This project calculates π to the Nth decimal place using Python. It started as a raw CLI math experiment and later evolved into a small FastAPI website with a cleaner user interface. The core idea was simple but important: do not just print a number — understand how different methods behave, why some fail, and why high precision arithmetic matters when working with real mathematical computation.
+        </p>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-3">
+            <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+                <div class="text-sm uppercase tracking-wider text-gray-400">Main Goal</div>
+                <div class="mt-2 text-lg font-semibold text-white">Find π to the Nth digit</div>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+                <div class="text-sm uppercase tracking-wider text-gray-400">Core Focus</div>
+                <div class="mt-2 text-lg font-semibold text-white">Precision + algorithms + web integration</div>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+                <div class="text-sm uppercase tracking-wider text-gray-400">Implementation Style</div>
+                <div class="mt-2 text-lg font-semibold text-white">CLI first, then FastAPI website</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-8 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl">
+            <h2 class="text-2xl font-bold text-white">What this project contains</h2>
+            <p class="mt-4 leading-8 text-gray-300">
+                This project has two usable forms. The first is a raw Python CLI version for direct algorithm practice. The second is a website version built with FastAPI so the same logic can be used through a browser interface.
+            </p>
+
+            <div class="mt-6 space-y-4">
+                <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+                    <h3 class="text-lg font-semibold text-cyan-300">CLI version</h3>
+                    <p class="mt-2 leading-7 text-gray-300">
+                        If you only want the raw Python logic, go to <span class="font-semibold text-white">sample.py</span> in the repository. That file focuses on the mathematical side of the project without website layers.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+                    <h3 class="text-lg font-semibold text-purple-300">Website version</h3>
+                    <p class="mt-2 leading-7 text-gray-300">
+                        The website version takes user input from an HTML form, sends it to the FastAPI backend, runs the Chudnovsky algorithm in Python, and returns the computed π digits to the browser using Jinja templating.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl">
+            <h2 class="text-2xl font-bold text-white">Stack used</h2>
+
+            <div class="mt-6 space-y-3">
+                <div class="rounded-2xl border border-white/10 bg-black/30 px-4 py-4">
+                    <span class="font-semibold text-white">Python 3.14.0</span>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-black/30 px-4 py-4">
+                    <span class="font-semibold text-white">FastAPI 0.135.1</span>
+                    <p class="mt-1 text-sm leading-6 text-gray-400">
+                        Used for the website version. Flask could also be used, but FastAPI was chosen here for practice.
+                    </p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-black/30 px-4 py-4">
+                    <span class="font-semibold text-white">HTML</span>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-black/30 px-4 py-4">
+                    <span class="font-semibold text-white">Tailwind CSS via browser CDN</span>
+                    <p class="mt-1 text-sm leading-6 text-gray-400">
+                        Optional. Normal CSS would also work. Tailwind was used for fast styling.
+                    </p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-black/30 px-4 py-4">
+                    <span class="font-semibold text-white">Poetry</span>
+                    <p class="mt-1 text-sm leading-6 text-gray-400">
+                        Used for environment and dependency practice. A normal venv setup is also completely fine.
+                    </p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-black/30 px-4 py-4">
+                    <span class="font-semibold text-white">Vercel</span>
+                    <p class="mt-1 text-sm leading-6 text-gray-400">
+                        Used for deployment of the web interface.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-8 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl md:p-10">
+        <h2 class="text-3xl font-bold text-white">How the code journey went</h2>
+        <p class="mt-4 leading-8 text-gray-300">
+            The project was not built by jumping straight into the final solution. Three different approaches were tried in the CLI version. That matters because this project is not only about getting an answer — it is about understanding why some methods are limited and why the final method is worth using.
+        </p>
+
+        <div class="mt-8 grid gap-6">
+            <div class="rounded-3xl border border-amber-400/20 bg-amber-400/10 p-6">
+                <div class="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-300">Method 1</div>
+                <h3 class="text-2xl font-bold text-white">Bailey–Borwein–Plouffe formula</h3>
+
+                <div class="mt-5 rounded-2xl border border-white/10 bg-black/40 p-5 font-mono text-sm leading-7 text-cyan-300 overflow-x-auto">
+                    π = Σ from k = 0 to ∞ of (1 / 16^k) × (4 / (8k + 1) - 2 / (8k + 4) - 1 / (8k + 5) - 1 / (8k + 6))
+                </div>
+
+                <div class="mt-5 space-y-3 text-gray-300 leading-8">
+                    <p>
+                        This was one of the first methods attempted in <span class="font-semibold text-white">sample.py</span>.
+                    </p>
+                    <p>
+                        The idea was to take input <span class="font-semibold text-white">n</span>, run a loop, apply the BBP formula step by step, and sum the values.
+                    </p>
+                    <p>
+                        The rough thinking was:
+                    </p>
+                    <ul class="list-disc space-y-2 pl-6">
+                        <li>take user input <span class="font-semibold text-white">n</span></li>
+                        <li>loop through terms</li>
+                        <li>apply the formula in each iteration</li>
+                        <li>sum all partial values</li>
+                    </ul>
+                    <p>
+                        The problem was that in this implementation it was not giving the level of precision we wanted. It effectively hit a wall around the same rough region where built-in floating point approaches also become disappointing for serious high-digit work.
+                    </p>
+                    <p class="font-medium text-amber-200">
+                        Verdict: mathematically interesting, but not strong enough for the goal of deep high precision in this project.
+                    </p>
+                </div>
+            </div>
+
+            <div class="rounded-3xl border border-rose-400/20 bg-rose-400/10 p-6">
+                <div class="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-rose-300">Method 2</div>
+                <h3 class="text-2xl font-bold text-white">Using Python’s built-in math.pi</h3>
+
+                <div class="mt-5 rounded-2xl border border-white/10 bg-black/40 p-5 font-mono text-sm leading-7 text-green-300 overflow-x-auto">
+                    f"{math.pi:.{n}f}"
+                </div>
+
+                <div class="mt-5 space-y-3 text-gray-300 leading-8">
+                    <p>
+                        This method is simple and useful for quick formatting practice. You get <span class="font-semibold text-white">math.pi</span> from Python’s math module and slice or format it to the required number of decimals.
+                    </p>
+                    <p>
+                        That sounds neat until reality lands a slap.
+                    </p>
+                    <p>
+                        <span class="font-semibold text-white">math.pi</span> is still based on floating point precision. It is not designed for huge decimal expansion. So even if the formatting looks dynamic, the underlying value is still limited.
+                    </p>
+                    <p>
+                        In other words, this method can display digits nicely, but it cannot magically create more true precision than Python float already has.
+                    </p>
+                    <p class="font-medium text-rose-200">
+                        Verdict: convenient, but limited. Fine for small display tasks, not for real high-precision π calculation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="rounded-3xl border border-emerald-400/20 bg-emerald-400/10 p-6">
+                <div class="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-300">Method 3</div>
+                <h3 class="text-2xl font-bold text-white">Chudnovsky algorithm</h3>
+
+                <div class="mt-5 rounded-2xl border border-white/10 bg-black/40 p-5 font-mono text-sm leading-7 text-purple-300 overflow-x-auto">
+                    1 / π = 12 × Σ from k = 0 to ∞ of [((-1)^k × (6k)! × (545140134k + 13591409)) / ((3k)! × (k!)^3 × 640320^(3k + 3/2))]
+                </div>
+
+                <div class="mt-5 space-y-3 text-gray-300 leading-8">
+                    <p>
+                        This is the method that solved the real problem.
+                    </p>
+                    <p>
+                        The Chudnovsky algorithm is famous because it converges very fast. Each iteration contributes roughly <span class="font-semibold text-white">14.18 correct digits</span> of π. That makes it far more practical than the earlier attempts for this project.
+                    </p>
+                    <p>
+                        Since normal <span class="font-semibold text-white">int</span>, <span class="font-semibold text-white">float</span>, or standard floating point storage cannot safely handle this kind of precision, we need a high precision arithmetic approach.
+                    </p>
+                    <p>
+                        Two common choices are:
+                    </p>
+                    <ul class="list-disc space-y-2 pl-6">
+                        <li><span class="font-semibold text-white">gmpy</span></li>
+                        <li><span class="font-semibold text-white">Decimal</span></li>
+                    </ul>
+                    <p>
+                        In this project, <span class="font-semibold text-white">Decimal</span> was used because it is easier to understand and already available in Python’s standard library.
+                    </p>
+                    <p class="font-medium text-emerald-200">
+                        Verdict: this became the final method because it is fast, precise, and actually suitable for the goal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-8 grid gap-8 lg:grid-cols-2">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl">
+            <h2 class="text-2xl font-bold text-white">Why Decimal is required</h2>
+
+            <div class="mt-5 rounded-2xl border border-white/10 bg-black/40 p-5 font-mono text-sm leading-7 text-green-300 overflow-x-auto">
+                getcontext().prec = n + 20
+            </div>
+
+            <div class="mt-5 space-y-3 text-gray-300 leading-8">
+                <p>
+                    Precision means how many significant digits the <span class="font-semibold text-white">Decimal</span> system is allowed to keep during calculation.
+                </p>
+                <p>
+                    This matters because if the internal precision is too low, the result starts rounding too early and the output becomes wrong or padded with garbage digits.
+                </p>
+                <p>
+                    In this project, the precision is set to <span class="font-semibold text-white">n + 20</span> as a safety buffer. The extra digits give the algorithm room to work before the final output is trimmed down to exactly the user-requested size.
+                </p>
+                <p>
+                    That little buffer is not decoration. It is the difference between real precision and fake confidence.
+                </p>
+            </div>
+        </div>
+
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl">
+            <h2 class="text-2xl font-bold text-white">Why factorial is used</h2>
+
+            <div class="mt-5 rounded-2xl border border-white/10 bg-black/40 p-5 font-mono text-sm leading-7 text-cyan-300 overflow-x-auto">
+                from math import factorial
+            </div>
+
+            <div class="mt-5 space-y-3 text-gray-300 leading-8">
+                <p>
+                    The Chudnovsky formula contains factorial-heavy terms such as:
+                </p>
+                <ul class="list-disc space-y-2 pl-6">
+                    <li><span class="font-semibold text-white">(6k)!</span></li>
+                    <li><span class="font-semibold text-white">(3k)!</span></li>
+                    <li><span class="font-semibold text-white">(k!)³</span></li>
+                </ul>
+                <p>
+                    Python’s built-in <span class="font-semibold text-white">math.factorial</span> is perfect for this part, because it is direct, readable, and reliable for integer factorial computation.
+                </p>
+                <p>
+                    So instead of reinventing factorial logic like a maniac before breakfast, the project simply uses the standard library.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-8 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl md:p-10">
+        <h2 class="text-3xl font-bold text-white">Algorithm flow in plain language</h2>
+
+        <div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+                <div class="text-sm uppercase tracking-wider text-indigo-300">Step 1</div>
+                <h3 class="mt-2 text-lg font-semibold text-white">Take input</h3>
+                <p class="mt-2 leading-7 text-gray-300">
+                    The user enters <span class="font-semibold text-white">n</span>, meaning how many decimal places of π are needed.
+                </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+                <div class="text-sm uppercase tracking-wider text-purple-300">Step 2</div>
+                <h3 class="mt-2 text-lg font-semibold text-white">Set precision</h3>
+                <p class="mt-2 leading-7 text-gray-300">
+                    Decimal precision is raised to <span class="font-semibold text-white">n + 20</span> so internal calculations stay accurate.
+                </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+                <div class="text-sm uppercase tracking-wider text-cyan-300">Step 3</div>
+                <h3 class="mt-2 text-lg font-semibold text-white">Choose iteration count</h3>
+                <p class="mt-2 leading-7 text-gray-300">
+                    Since each loop gives around <span class="font-semibold text-white">14.18 digits</span>, the number of loop iterations can be estimated from <span class="font-semibold text-white">n</span>.
+                </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+                <div class="text-sm uppercase tracking-wider text-emerald-300">Step 4</div>
+                <h3 class="mt-2 text-lg font-semibold text-white">Compute and trim</h3>
+                <p class="mt-2 leading-7 text-gray-300">
+                    The formula is applied, the result is computed, and then it is formatted or trimmed to exactly the requested decimal length.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-8 rounded-2xl border border-white/10 bg-black/40 p-6">
+            <h3 class="text-xl font-semibold text-white">Iteration logic intuition</h3>
+            <p class="mt-3 leading-8 text-gray-300">
+                Because each iteration gives about <span class="font-semibold text-white">14.18 digits</span>, there is no need to loop blindly forever. The program estimates how many terms are needed based on the requested precision. That keeps the algorithm efficient and avoids useless work.
+            </p>
+            <p class="mt-3 leading-8 text-gray-300">
+                The rough idea is:
+            </p>
+
+            <div class="mt-4 rounded-xl border border-white/10 bg-slate-950/70 p-4 font-mono text-sm leading-7 text-indigo-300 overflow-x-auto">
+                iteration_count ≈ (n // 14) + 1
+            </div>
+
+            <p class="mt-4 leading-8 text-gray-300">
+                It is not a mystical sacred number falling from the sky. It is just practical estimation based on how quickly Chudnovsky converges.
+            </p>
+        </div>
+    </section>
+
+    <section class="mt-8 grid gap-8 lg:grid-cols-2">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl">
+            <h2 class="text-2xl font-bold text-white">Website integration with FastAPI</h2>
+
+            <div class="mt-5 space-y-3 text-gray-300 leading-8">
+                <p>
+                    After proving the algorithm in the terminal, the project was expanded into a small web app using FastAPI.
+                </p>
+                <p>
+                    The browser side contains a form where the user enters the desired number of digits.
+                </p>
+                <p>
+                    That value is sent to a FastAPI route using a POST request. The backend reads the form value, runs the calculation function, and then renders the result back to the template.
+                </p>
+            </div>
+
+            <div class="mt-5 rounded-2xl border border-white/10 bg-black/40 p-5 font-mono text-sm leading-7 text-cyan-300 overflow-x-auto">
+                User → HTML form → FastAPI route → Python algorithm → template response
+            </div>
+
+            <p class="mt-5 leading-8 text-gray-300">
+                This made the project more than just a terminal script. It turned it into a small usable product.
+            </p>
+        </div>
+
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl">
+            <h2 class="text-2xl font-bold text-white">About this About page</h2>
+
+            <div class="mt-5 space-y-3 text-gray-300 leading-8">
+                <p>
+                    This page exists for the same reason a good README exists: code alone is not enough.
+                </p>
+                <p>
+                    A proper project should explain:
+                </p>
+                <ul class="list-disc space-y-2 pl-6">
+                    <li>what the project does</li>
+                    <li>which methods were tried</li>
+                    <li>which problems appeared</li>
+                    <li>why the final solution was chosen</li>
+                    <li>how the web implementation connects to the core logic</li>
+                </ul>
+                <p>
+                    That is what this page is doing. It is basically the project story, the reasoning, and the technical explanation placed directly inside the app.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-8 rounded-3xl border border-red-400/20 bg-red-400/10 p-8 shadow-2xl backdrop-blur-xl">
+        <h2 class="text-2xl font-bold text-white">Caution</h2>
+        <p class="mt-4 leading-8 text-gray-200">
+            Requesting too many digits can put serious pressure on the CPU. High precision math is not free. The more digits requested, the more expensive the computation becomes. So yes, π is beautiful, but it can absolutely bully weak hardware if you let users go wild.
+        </p>
+    </section>
+
+    <section class="mt-8 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl md:p-10">
+        <h2 class="text-3xl font-bold text-white">Project summary</h2>
+        <div class="mt-5 space-y-4 text-gray-300 leading-8">
+            <p>
+                This project is a practical exploration of mathematical precision in Python.
+            </p>
+            <p>
+                It began with simple and limited methods, moved through experimentation, and ended with a proper high precision implementation using the Chudnovsky algorithm and Decimal arithmetic.
+            </p>
+            <p>
+                It also demonstrates how a pure CLI math program can be upgraded into a web application with FastAPI, HTML templating, styling, and deployment.
+            </p>
+            <p>
+                So this is not just “a π calculator.” It is a small but meaningful project about algorithm choice, numerical limits, precision handling, backend integration, and clear technical explanation.
+            </p>
+        </div>
+    </section>
+
+    <div class="mt-10 flex flex-col items-center justify-center gap-4 text-center">
+        <a href="/" class="rounded-2xl bg-gradient-to-r from-indigo-500 to-purple-600 px-6 py-3 font-semibold text-white shadow-lg transition hover:from-indigo-600 hover:to-purple-700">
+            Back to Calculator
+        </a>
+        <p class="text-sm text-gray-500">
+            Powered by Python, precision, and a little mathematical stubbornness.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

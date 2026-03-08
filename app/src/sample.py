@@ -100,8 +100,7 @@
 from math import factorial
 from decimal import Decimal, getcontext  #| float/double cant handle too much numbers
 
-# set precision : max digits of that number
-getcontext().prec = 5000
+
 
 
 # take imports
@@ -109,6 +108,8 @@ getcontext().prec = 5000
 
 
 def chudnovsky(n):
+    # set precision : max digits of that number
+    getcontext().prec = n+20
 
     # IMPORTANT : chudnovsky gives 14.18 digits per iteration , but we need 1 digit per iteration
     iteration = ( n // 14) + 1
