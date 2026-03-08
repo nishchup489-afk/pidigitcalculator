@@ -8,7 +8,14 @@ from decimal import Decimal , getcontext
 app = FastAPI()
 
 
-templates = Jinja2Templates(directory="app/src/app/templates")
+import os
+from pathlib import Path
+
+# Get the current file's directory (app/src/app)
+BASE_DIR = Path(__file__).resolve().parent
+
+# Set the template directory relative to this file
+templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
 
 
 def chudnovsky(n):
