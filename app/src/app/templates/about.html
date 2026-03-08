@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About | π Digit Finder</title>
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+    .formula-block::-webkit-scrollbar { height: 4px; }
+    .formula-block::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 10px; }
+</style>
 </head>
 
 <body class="min-h-screen bg-gradient-to-br from-indigo-950 via-slate-900 to-black text-white">
@@ -131,8 +137,8 @@
                 <div class="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-300">Method 1</div>
                 <h3 class="text-2xl font-bold text-white">Bailey–Borwein–Plouffe formula</h3>
 
-                <div class="mt-5 rounded-2xl border border-white/10 bg-black/40 p-5 font-mono text-sm leading-7 text-cyan-300 overflow-x-auto">
-                    π = Σ from k = 0 to ∞ of (1 / 16^k) × (4 / (8k + 1) - 2 / (8k + 4) - 1 / (8k + 5) - 1 / (8k + 6))
+                <div class="formula-block mt-5 rounded-2xl border border-white/10 bg-black/40 p-5 text-center text-lg leading-7 text-cyan-300 overflow-x-auto">
+                    $$\pi = \sum_{k=0}^{\infty} \left[ \frac{1}{16^k} \left( \frac{4}{8k+1} - \frac{2}{8k+4} - \frac{1}{8k+5} - \frac{1}{8k+6} \right) \right]$$
                 </div>
 
                 <div class="mt-5 space-y-3 text-gray-300 leading-8">
@@ -191,8 +197,8 @@
                 <div class="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-300">Method 3</div>
                 <h3 class="text-2xl font-bold text-white">Chudnovsky algorithm</h3>
 
-                <div class="mt-5 rounded-2xl border border-white/10 bg-black/40 p-5 font-mono text-sm leading-7 text-purple-300 overflow-x-auto">
-                    1 / π = 12 × Σ from k = 0 to ∞ of [((-1)^k × (6k)! × (545140134k + 13591409)) / ((3k)! × (k!)^3 × 640320^(3k + 3/2))]
+                <div class="formula-block mt-5 rounded-2xl border border-white/10 bg-black/40 p-5 text-center text-lg leading-7 text-purple-300 overflow-x-auto">
+                    $$\frac{1}{\pi} = 12 \sum_{k=0}^{\infty} \frac{(-1)^k (6k)! (545140134k + 13591409)}{(3k)! (k!)^3 (640320)^{3k + 3/2}}$$
                 </div>
 
                 <div class="mt-5 space-y-3 text-gray-300 leading-8">
@@ -259,9 +265,9 @@
                     The Chudnovsky formula contains factorial-heavy terms such as:
                 </p>
                 <ul class="list-disc space-y-2 pl-6">
-                    <li><span class="font-semibold text-white">(6k)!</span></li>
-                    <li><span class="font-semibold text-white">(3k)!</span></li>
-                    <li><span class="font-semibold text-white">(k!)³</span></li>
+                    <li><span class="font-semibold text-white">$(6k)!$</span></li>
+                    <li><span class="font-semibold text-white">$(3k)!$</span></li>
+                    <li><span class="font-semibold text-white">$(k!)^3$</span></li>
                 </ul>
                 <p>
                     Python’s built-in <span class="font-semibold text-white">math.factorial</span> is perfect for this part, because it is direct, readable, and reliable for integer factorial computation.
